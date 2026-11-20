@@ -66,8 +66,7 @@ data "aws_vpc_endpoint_service" "interface_endpoint_service" {
 }
 
 module "gateway_endpoint_label" {
-  source  = "SevenPico/context/null"
-  version = "2.0.0"
+  source = "git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0"
 
   for_each   = local.enabled ? data.aws_vpc_endpoint_service.gateway_endpoint_service : {}
   attributes = [each.key]
@@ -76,8 +75,7 @@ module "gateway_endpoint_label" {
 }
 
 module "interface_endpoint_label" {
-  source  = "SevenPico/context/null"
-  version = "2.0.0"
+  source = "git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0"
 
   for_each   = local.enabled ? data.aws_vpc_endpoint_service.interface_endpoint_service : {}
   attributes = [each.key]
