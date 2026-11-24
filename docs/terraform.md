@@ -16,8 +16,8 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_label"></a> [label](#module\_label) | cloudposse/label/null | 0.25.0 |
-| <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
+| <a name="module_context"></a> [context](#module\_context) | git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0 | n/a |
+| <a name="module_label"></a> [label](#module\_label) | git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0 | n/a |
 
 ## Resources
 

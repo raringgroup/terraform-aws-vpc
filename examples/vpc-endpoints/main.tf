@@ -107,8 +107,7 @@ module "subnets" {
 
 module "endpoint_security_groups" {
   for_each = local.enabled ? toset(local.interfaces) : []
-  source   = "cloudposse/security-group/aws"
-  version  = "2.0.0-rc1"
+  source   = "git::https://github.com/raringgroup/terraform-aws-security-group.git?ref=v0.1.0"
 
   create_before_destroy      = true
   preserve_security_group_id = false

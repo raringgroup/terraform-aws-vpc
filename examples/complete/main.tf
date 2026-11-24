@@ -47,8 +47,7 @@ module "vpc" {
 }
 
 module "subnets" {
-  source  = "cloudposse/dynamic-subnets/aws"
-  version = "2.0.4"
+  source = "git::https://github.com/raringgroup/terraform-aws-dynamic-subnets.git?ref=v0.1.1"
 
   availability_zones   = var.availability_zones
   vpc_id               = module.vpc.vpc_id
