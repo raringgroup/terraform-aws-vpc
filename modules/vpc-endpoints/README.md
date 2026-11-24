@@ -21,9 +21,9 @@ Submodule for provisioning Gateway and/or Interface VPC Endpoints to the VPC cre
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_gateway_endpoint_label"></a> [gateway\_endpoint\_label](#module\_gateway\_endpoint\_label) | cloudposse/label/null | 0.25.0 |
-| <a name="module_interface_endpoint_label"></a> [interface\_endpoint\_label](#module\_interface\_endpoint\_label) | cloudposse/label/null | 0.25.0 |
-| <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
+| <a name="module_context"></a> [context](#module\_context) | git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0 | n/a |
+| <a name="module_gateway_endpoint_label"></a> [gateway\_endpoint\_label](#module\_gateway\_endpoint\_label) | git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0 | n/a |
+| <a name="module_interface_endpoint_label"></a> [interface\_endpoint\_label](#module\_interface\_endpoint\_label) | git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0 | n/a |
 
 ## Resources
 
