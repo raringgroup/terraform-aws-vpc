@@ -4,6 +4,9 @@ Copyright 2026 Raring Group LLC
 This product includes software developed by Raring Group LLC (https://github.com/raringgroup).
 
 Portions of this software are derived from terraform-aws-vpc (https://github.com/cloudposse/terraform-aws-vpc),
-Copyright 2017-2022 Cloud Posse, LLC, licensed under the Apache License, Version 2.0.
-Portions of _context.tf (including copies under examples/ and modules/) are derived from terraform-null-label (https://github.com/cloudposse/terraform-null-label), Copyright 2020-2022 Cloud Posse, LLC, licensed under the Apache License, Version 2.0.
-Modifications by Raring Group LLC: adapted for the Raring Group context module, re-sourced module dependencies to Raring Group forks, and added Apache-2.0 file headers.
+Copyright 2017-2020 Cloud Posse, LLC, licensed under the Apache License, Version 2.0.
+Portions of _context.tf (including copies under examples/ and modules/) are derived from terraform-null-label (https://github.com/cloudposse/terraform-null-label), Copyright 2017-2020 Cloud Posse, LLC, licensed under the Apache License, Version 2.0.
+Modifications by Raring Group LLC:
+- Replaced the cloudposse/label/null module with the Raring Group terraform-null-context module (module.this -> module.context).
+- Renamed context.tf to _context.tf and, in modules/vpc-endpoints, outputs.tf/variables.tf/versions.tf to _outputs.tf/_variables.tf/_versions.tf.
+- Added Terragrunt example configurations and Apache-2.0 file headers.
